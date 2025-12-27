@@ -26,5 +26,9 @@ CREATE TABLE members (
 )
 
 CREATE TABLE loans (
-
+    loan_id SERIAL NOT NULL PRIMARY KEY,
+    book_id INT REFERENCES books(book_id),
+    member_id INT REFERENCES members(member_id),
+    loan_date DATE DEFAULT CURRENT_DATE,
+    return_date DATE
 )
