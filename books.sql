@@ -55,25 +55,25 @@ Next I'll be inserting this sample data:
 
 INSERT INTO authors (name, birth_year) VALUES ('William Shakespeare', 1564);
 INSERT INTO authors (name, birth_year) VALUES ('Agatha Christie', 1890);
-INSERT INTO authors (name, birth_year) VALUES ('Barbara Cartland');
-INSERT INTO authors (name, birth_year) VALUES ('Danielle Steel');
+INSERT INTO authors (name, birth_year) VALUES ('Barbara Cartland', NULL);
+INSERT INTO authors (name, birth_year) VALUES ('Danielle Steel', NULL);
 INSERT INTO authors (name, birth_year) VALUES ('Harold Robbins', 1916);
 
 INSERT INTO books (title, published_year, author_id) VALUES ('A Hazard of Hearts', 3);
 INSERT INTO books (title, published_year, author_id) VALUES ('The Promise', 1978, 4);
 INSERT INTO books (title, published_year, author_id) VALUES ('Hamlet', 1603, 1);
-INSERT INTO books (title, published_year, author_id) VALUES ('Macbeth', 1);
+INSERT INTO books (title, published_year, author_id) VALUES ('Macbeth', NULL, 1);
 INSERT INTO books (title, published_year, author_id) VALUES ('The Carpetbaggers', 1961, 5);
 INSERT INTO books (title, published_year, author_id) VALUES ('The Wicked Marquis', 1922, 3);
-INSERT INTO books (title, published_year, author_id) VALUES ('Murder on the Orient Express', 2);
-INSERT INTO books (title, published_year, author_id) VALUES ('The Adventurers', 5);
+INSERT INTO books (title, published_year, author_id) VALUES ('Murder on the Orient Express', NULL, 2);
+INSERT INTO books (title, published_year, author_id) VALUES ('The Adventurers', NULL, 5);
 INSERT INTO books (title, published_year, author_id) VALUES ('And Then There Were None', 1939, 2);
-INSERT INTO books (title, published_year, author_id) VALUES ('The Ring', 4);
+INSERT INTO books (title, published_year, author_id) VALUES ('The Ring', NULL, 4);
 
 INSERT INTO members (name, email, joined_date) VALUES ('Alice Johnson', 'alice@example.com', '2023-01-10');
 INSERT INTO members (name, email, joined_date) VALUES ('Brian Smith', 'brian@example.com', '2023-02-14');
 INSERT INTO members (name, email, joined_date) VALUES ('Carla Mendes', 'carla@example.com', '2023-03-01');
-INSERT INTO members (name, email, joined_date) VALUES ('David Lee', 'david@example.com');
+INSERT INTO members (name, email, joined_date) VALUES ('David Lee', 'david@example.com', NULL);
 INSERT INTO members (name, email, joined_date) VALUES ('Emily Clark', 'emily@example.com', '2023-04-05');
 
 INSERT INTO loans (book_id, member_id, loan_date, return_date)
