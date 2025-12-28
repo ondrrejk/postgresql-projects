@@ -59,7 +59,7 @@ INSERT INTO authors (name, birth_year) VALUES ('Barbara Cartland', NULL);
 INSERT INTO authors (name, birth_year) VALUES ('Danielle Steel', NULL);
 INSERT INTO authors (name, birth_year) VALUES ('Harold Robbins', 1916);
 
-INSERT INTO books (title, published_year, author_id) VALUES ('A Hazard of Hearts', 3);
+INSERT INTO books (title, published_year, author_id) VALUES ('A Hazard of Hearts', NULL, 3);
 INSERT INTO books (title, published_year, author_id) VALUES ('The Promise', 1978, 4);
 INSERT INTO books (title, published_year, author_id) VALUES ('Hamlet', 1603, 1);
 INSERT INTO books (title, published_year, author_id) VALUES ('Macbeth', NULL, 1);
