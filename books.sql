@@ -108,7 +108,7 @@ WHERE loans.return_date IS NULL;
 SELECT books.title, books.published_year, loans.loan_date
 FROM books
 JOIN loans ON books.book_id=loans.book_id
-WHERE loans.return_date IS NULL AND loans.return_date < CURRENT_DATE - INTERVAL '30 days';
+WHERE loans.return_date IS NULL AND loans.loan_date < CURRENT_DATE - INTERVAL '30 days';
 
 -- count how many books each author has written
 SELECT authors.name, COUNT(*) AS books
