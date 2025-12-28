@@ -102,4 +102,10 @@ WHERE authors.name='Agatha Christie';
 SELECT books.title, books.published_year, loans.loan_date
 FROM books
 JOIN loans ON books.book_id=loans.book_id
-WHERE loans.return_date=NULL;
+WHERE loans.return_date IS NULL;
+
+-- show overdue books (where loan_date is older than 30 days from now)
+SELECT books.title, books.published_year, loans.loan_date
+FROM books
+JOIN loans ON books.book_id=loans.book_id
+WHERE loans.return_date IS NULL AND loans.return_date < CURRENT_DATE - INTERVAL '30 days';
